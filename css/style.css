@@ -1,0 +1,479 @@
+/* NAV BAR */
+:root{
+    --red: #ff445f;
+}
+.nav-ul{
+    height: 100px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+
+.titre{
+    font-size: 45px;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.point{
+    color: var(--red);
+}
+.nav-black p{
+    color: #fff;
+    font-size: 2rem;
+    margin: 3rem ;
+}
+.nav-black .titre-black{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: -80px ;
+}/* Bar progress droit */
+.progress{
+    border-radius: 10px;
+    width: 175px;
+}
+.progress-bar{
+  
+    border-radius: 0 ;
+    background: linear-gradient(to right, red, rgb(255, 233, 109));
+    border-radius: 10px;
+}
+/* Nav en none sur la droite de l'ecran */
+.nav-black{
+    position: absolute;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    right: 0px;
+    top: 0;
+    z-index: 2;   
+    display: none;
+}
+.nav-black i{
+    color: #fff;
+    float: right;
+    margin: -115px -15px;
+    font-size: 1.5rem;
+}
+.nav-black a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-black i{
+    cursor: pointer;
+}
+.nav-black div{
+    margin: 150px 0;
+    font-family: myriad-pro, sans-serif;
+    font-style: italic;
+
+}
+.nav-ul p svg{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: gray;
+}
+.display{
+    display: none;
+}
+.display a{
+    font-size: 1.5rem;
+    color: rgb(209, 209, 209);
+    font-weight: 300;
+}
+
+.link{
+    margin-top: 100px;
+}
+
+/* Main */
+
+/* Bloc bleu vert rouge sur les coté */
+.container-aside section:nth-last-child(1){
+    height: 120px;
+    background-color: var(--red);
+}
+.container-aside section:nth-last-child(2){
+    height: 120px;
+    background-color: #45e493;
+}
+.container-aside section:nth-last-child(3){
+    height: 120px;
+    background-color: #39bef6;
+}
+.event{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container-aside h2{
+    padding: 14px 20px;
+    color: #fff;   
+}
+.container-aside p{
+    margin: 10px 18px;
+    text-align: left;
+    color: #fff;
+}
+/* Section central */
+/* Texte titre */
+
+.container-main{
+    
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 63px;
+}
+.titre-para p{
+    margin-bottom: 45px;
+    
+}
+.petit-titre{
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* aside bloc image */
+.blocImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.divOne{
+    background-color: #fff;
+    height: 170px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 50px 1px rgb(207, 207, 207);
+}
+.divOne img[src="img/Adobe.gif"]{
+    width: 60px;
+    height: 60px;
+    transform: rotate(10deg);
+    margin: 3px 5px;
+}
+.divOne .container-progress{
+    width: 200px;
+    text-align: center;
+    margin-left: -2px;
+}
+.oneImg{
+    display: flex;
+    justify-content: center;
+}
+.oneImg p{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 2px 0;
+    
+}
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+}
+.divTwo{
+    background-color: #fff;
+    height: 210px;
+    box-shadow: 1px 1px 50px 1px rgb(207, 207, 207);
+    
+}
+.divTwo p{
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -100px;
+}
+.divTwo img{
+    width: 150px;
+    margin: 0 10px;
+
+}
+/* IMG CENTRAL */
+.divThree{
+    
+    
+    height: 400px;
+    overflow: hidden;
+}
+.divThree img[src="img/star-w.jpg"]{
+    
+    margin-top: -5.5rem;
+    filter: brightness(50%);
+    -webkit-filter: brightness(60%);
+}
+
+.divThree p{  
+    margin: 30% 25%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+}
+/* Point de carrousel */
+.divThree ul{
+    display: flex;
+    position: relative;
+    top: 48%;
+    justify-content: center;
+    color: rgb(233, 233, 233);
+}
+.divThree li{
+    margin: 0 -5px; 
+}
+.divThree li{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 8px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 50%;
+}
+.divThree .pink{
+    background-color: var(--red);
+}
+
+/* Paragraphe fin de page apres l'elt central */
+article{
+    margin: 30px 0;
+    text-align: justify;
+}
+
+
+/* Footer */
+
+footer{
+    height: 100px;
+    background-color: rgb(233, 233, 233);
+    font-family: myriad-pro, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    
+}
+
+
+
+/*  slideshow */
+
+#slideset6 {
+    height: 10em;
+    position: relative;
+}
+
+#slideset6 > * {
+    animation: 12s autoplay6 infinite linear;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0.0;
+}
+
+@keyframes autoplay6 {
+    0% {opacity: 0.0}
+    4% {opacity: 1.0}
+    33.33% {opacity: 1.0}
+    37.33% {opacity: 0.0}
+    100% {opacity: 0.0}
+}
+
+#slideset6 > *:nth-child(1) {animation-delay: 0s}
+#slideset6 > *:nth-child(2) {animation-delay: 4s}
+#slideset6 > *:nth-child(3) {animation-delay: 8s}
+
+@media screen and (max-width: 1200px){
+    .petit-titre{
+        margin-top: 1rem;
+    }
+    .container-aside{
+        display: flex;
+    }
+    .asideImg{
+        display: flex;
+
+    }
+    .divOne{
+       height: 200px;
+    }
+    .divTwo{
+       height: 200px;
+    }
+    
+    .divOne .container-progress{
+        
+        text-align: center;
+        margin: 0 25%;
+    }
+    .divTwo p{
+        position: relative;
+        top: 1rem;
+    }
+    .divTwo img[src="img/rond.png"]{
+        text-align: center;
+        margin: -3% 31%;
+    }
+    .divThree{
+        width: 97%;
+        height: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+        background: url('../img/star-grand.jpg') no-repeat center;
+        background-size: cover;
+        filter: brightness(50%);
+        -webkit-filter: brightness(85%);
+    }
+
+    #slideset6 img{
+        display: none;
+    }
+    .divThree p{  
+    margin: 15% 35%;
+    color: rgb(255, 255, 255);
+
+
+}
+
+
+
+    }
+
+@media screen and (max-width: 990px){
+    
+    .divOne .container-progress{
+        
+        text-align: center;
+        margin: 0 20%;
+    }
+    .divTwo p{
+        position: relative;
+        top: 0.7rem;
+        width: 100%;
+    }
+    .divTwo img[src="img/rond.png"]{
+        text-align: center;
+        margin: -3% 23%;
+    }
+}
+@media screen and (max-width: 767px){
+    .container-aside{
+        display: block;
+    }
+    .asideImg{
+        display: block;
+
+    }
+    .divOne{
+       height: 200px;
+    }
+    .divTwo{
+       height: 200px;
+    }
+    
+    .divOne .container-progress{
+        
+        text-align: center;
+        margin: 0 25%;
+    }
+    .divTwo p{
+        position: relative;
+        top: 1rem;
+    }
+    .divTwo img[src="img/rond.png"]{
+        text-align: center;
+        margin: -3% 31%;
+    }
+    .divThree{
+        width: 97%;
+        height: 400px;
+        margin: 0 auto;
+        margin-left: 0px;
+        overflow: hidden;
+        background: none;
+    }
+
+    #slideset6 img{
+        display: block;
+    }
+    .divThree p{  
+    text-align: center;
+    margin: 30% auto ;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    width: 100%;
+
+
+}
+
+
+
+    }
+    @media screen and (min-width: 200px) and (max-width: 500px){
+    .container-aside{
+        display: block;
+    }
+    .asideImg{
+        display: block;
+
+    }
+    .divOne{
+       height: 200px;
+    }
+    .divTwo{
+       height: 200px;
+    }
+    
+    .divOne .container-progress{
+        
+        text-align: center;
+        margin: 0 15%;
+    }
+    .divTwo p{
+        position: relative;
+        top: 1rem;
+    }
+    .divTwo img[src="img/rond.png"]{
+        text-align: center;
+        margin: -3% 21%;
+    }
+    .divThree{
+        width: 96%;
+        height: 400px;
+        margin: 0 auto;
+        margin-left: 0px;
+        overflow: hidden;
+        background: none;
+    }
+
+    #slideset6 img{
+        display: block;
+    }
+    .divThree p{  
+    text-align: center;
+    margin: 30% auto ;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    width: 100%;
+    }
+    .nav-black{
+        width: 360px;
+    }
+    .nav-black li{
+       font-size: 1.7rem;
+       margin-left: 60px;
+    }
+
+
+    }
